@@ -1,0 +1,11 @@
+# Render Blueprint for the portfolio (static site, free, no cold starts)
+services:
+  - type: web
+    name: chris-portfolio
+    runtime: static
+    buildCommand: echo "No build step"
+    staticPublishPath: .
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=604800
