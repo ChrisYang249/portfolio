@@ -21,9 +21,6 @@ window.CONTENT = {
     github: `https://github.com/ChrisYang249`,
     linkedin: `https://www.linkedin.com/in/christopher-yang-80435b281/`,
     headshot: `assets/img/chris-headshot.webp`,
-
-    // One or two sentences at the top of the page, in Chris's voice.
-    // Prompt: who are you and what do you build?
     intro: `I build practical software for real people and real processes, and use machine learning where it helps. My work ranges from a vet clinic’s adoption system and a neuroscience lab’s inventory tracker to disease prediction from gut microbiome data.`,
   },
 
@@ -57,14 +54,14 @@ window.CONTENT = {
       ],
       demoNote: `Staff portal login is not public. The adopter side is open to everyone.`,
       video: { src: `assets/animalia-video.mp4`, poster: `assets/img/animalia-clinic.webp`,
-               caption: `Awareness video Chris made for the clinic's adoption campaign` },
+               caption: `Awareness video I made for the clinic's adoption campaign` },
       gallery: [
         { src: `assets/img/animalia-desktop-home.webp`, alt: `Cat carousel on the adoption home page` },
         { src: `assets/img/animalia-mobile.webp`, alt: `Swipe-style cat card on a phone`, tall: true },
         { src: `assets/img/animalia-apply.webp`, alt: `Visit booking form` },
         { src: `assets/img/animalia-dashboard.webp`, alt: `Staff dashboard with visit requests and cat profiles` },
       ],
-      // Chris's own words. Prompts are shown on the site until filled in.
+      // my own words
       summary: `A swipe-to-adopt app for Animalia’s cats, with a staff portal for listings and visit bookings. It gives adopters and staff one place to manage adoptions instead of a manual process.`,
       built: `An adopter site (to be linked from the clinic’s main website) where people browse 30 cats, save favourites, and book visits, plus a staff portal for visit requests, cat profiles, clients, and orders. I also made the clinic’s awareness video.`,
       challenge: `Syncing visit bookings to Google Calendar for both adopter and staff. I had to handle authentication, time zones, and updates when a visit changed or was cancelled.`,
@@ -181,8 +178,8 @@ window.CONTENT = {
       extra: `Finalist and presenter, IEEE MIT Undergraduate Research Technology Conference (URTC), October 2024`,
       image: { src: `assets/img/brain-poster.webp`, alt: `Research poster presented at MIT URTC 2024` },
       photos: [
-        { src: `assets/img/urtc-poster-chris.webp`, alt: `Chris with his poster at MIT URTC` },
-        { src: `assets/img/urtc-explaining.webp`, alt: `Chris presenting his poster to a visitor` },
+        { src: `assets/img/urtc-poster-chris.webp`, alt: `Presented my research and poster at MIT URTC` },
+        { src: `assets/img/urtc-explaining.webp`, alt: `Collaborating with visitors at the Conference` },
       ],
       stats: [
         [`73.9%`, `test accuracy, CNN trained from scratch`],
@@ -201,7 +198,7 @@ window.CONTENT = {
       id: `gmu`,
       title: `Using LLMs to Predict One-Year Hospitalization in Liver Transplant Recipients`,
       credit: `Team of 3. First Prize, Best Speaker`,
-      authors: `Janice Li, Patrick Shi, Christopher Yang`,
+      authors: `Christopher Yang, Janice Li, Patrick Shi`,
       venue: `George Mason University Data Analytics Internship, July 2024`,
       extra: `My part: the decision tree model, the feature-importance analysis and the correlation matrix`,
       image: { src: `assets/img/gmu-decision-tree.webp`, alt: `Feature importances and correlation matrix from the decision tree model` },
