@@ -16,7 +16,6 @@ window.CONTENT = {
     name: `Christopher Yang`,
     shortName: `Chris`,
     school: `The Lawrenceville School, New Jersey`,
-    base: `Abu Dhabi and New Jersey`,
     email: `yang.christopher.x@gmail.com`,
     github: `https://github.com/ChrisYang249`,
     linkedin: `https://www.linkedin.com/in/christopher-yang-80435b281/`,
@@ -28,7 +27,7 @@ window.CONTENT = {
   workIntro: `Built during internships and school projects, then handed over to the clinic, lab, company or school that asked for them. The public versions run on sample data.`,
 
   // ------------------------------------------------------------------------
-  // PROJECTS, in the order they appear. Strongest first.
+  // PROJECTS, in the order they appear. 
   // ------------------------------------------------------------------------
   projects: [
     {
@@ -233,7 +232,7 @@ I helped prepare the data and build the random forest models that predict glypho
   ],
 
   // ------------------------------------------------------------------------
-  // SMALLER THINGS. Set show: false to hide an item.
+  // SMALLER THINGS.
   // ------------------------------------------------------------------------
   more: [
     { show: true, title: `Frog stripe classifier`, where: `NYU Abu Dhabi Evolutionary Genomics Lab, December 2024`,
