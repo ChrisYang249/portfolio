@@ -2,22 +2,14 @@
   ==========================================================================
   PORTFOLIO CONTENT
   ==========================================================================
-  This is the only file you need to edit to change the words on the site.
+  This is the Portfolio content.
 
   HOW TO EDIT
   - Text sits between backticks: `like this`. You can use ' and " freely
     inside backticks. Do not delete the backticks or the comma after them.
-  - Any field set to TODO shows a dashed "Chris to write" box on the site.
-    Replace TODO with Chris's own words, e.g.
-        built: TODO,
-    becomes
-        built: `I designed the database and wrote the booking flow...`,
   - Leave a blank line between paragraphs to start a new paragraph.
-  - Before submitting, open the site and check that no dashed boxes remain.
   ==========================================================================
 */
-
-const TODO = null;
 
 window.CONTENT = {
   person: {
@@ -32,7 +24,7 @@ window.CONTENT = {
 
     // One or two sentences at the top of the page, in Chris's voice.
     // Prompt: who are you and what do you build?
-    intro: TODO,
+    intro: `I build practical software for real people and real processes, and use machine learning where it helps. My work ranges from a vet clinic’s adoption system and a neuroscience lab’s inventory tracker to disease prediction from gut microbiome data.`,
   },
 
   // Line under the "Projects" heading
@@ -73,10 +65,10 @@ window.CONTENT = {
         { src: `assets/img/animalia-dashboard.webp`, alt: `Staff dashboard with visit requests and cat profiles` },
       ],
       // Chris's own words. Prompts are shown on the site until filled in.
-      summary: TODO,   // 1-2 sentences: what is it and why did the clinic need it?
-      built: TODO,     // What did you personally build?
-      challenge: TODO, // Hardest technical or other problem, and how you solved it
-      learned: TODO,   // What did you learn?
+      summary: `A swipe-to-adopt app for Animalia’s cats, with a staff portal for listings and visit bookings. It gives adopters and staff one place to manage adoptions instead of a manual process.`,
+      built: `An adopter site (to be linked from the clinic’s main website) where people browse 30 cats, save favourites, and book visits, plus a staff portal for visit requests, cat profiles, clients, and orders. I also made the clinic’s awareness video.`,
+      challenge: `Syncing visit bookings to Google Calendar for both adopter and staff. I had to handle authentication, time zones, and updates when a visit changed or was cancelled.`,
+      learned: `Building for real users is different from building for a class. Clinic staff needed something simple to run without me, so I cut features and focused on a clean handover.`, 
     },
 
     {
@@ -106,10 +98,10 @@ window.CONTENT = {
         { src: `assets/img/lims-blockers.webp`, alt: `EP blockers inventory` },
         { src: `assets/img/lims-logs.webp`, alt: `Creation audit log` },
       ],
-      summary: TODO,
-      built: TODO,
-      challenge: TODO,
-      learned: TODO,
+      summary: `A web system that tracks the lab’s orders, reagents, storage locations, and users, with a log of every change. It replaces scattered spreadsheets and emails so the team can see what’s in stock and what’s on order.`,
+      built: `A working web app covering product and order tracking, reagents, blockers, storage locations, and user management. I added secure login and an audit log that records who created or deleted each item, and when.`,
+      challenge: `Building the audit trail. Every change to the inventory had to be traceable, so I set up secure login and logged each creation and deletion with who made it and when.`,
+      learned: `In a lab, accuracy and accountability matter as much as features. I learned to design the data model around how researchers actually order, store, and use supplies.`,
     },
 
     {
@@ -138,10 +130,10 @@ window.CONTENT = {
         { src: `assets/img/inflammation-home.webp`, alt: `Upload page` },
         { src: `assets/img/inflammation-eda.webp`, alt: `Correlation charts for each marker`, tall: true },
       ],
-      summary: TODO,
-      built: TODO,
-      challenge: TODO,
-      learned: TODO,
+      summary: `A web tool powered by machine learning models that predict five inflammation-related blood markers from a sample’s gut microbiome and demographic data. It helps the Cmbio team explore how gut bacteria relate to inflammation and screen samples before lab testing.`,
+      built: `I cleaned and merged the microbiome datasets, trained one model per marker, and built a Flask web app. Users upload a CSV to get predictions, or explore correlation charts for each marker.`,
+      challenge: `Preparing the data. The datasets covered about 80 bacterial families and were sparse, with many zero values. I merged and cleaned them into 158 consistent features so the models could learn from them.`,
+      learned: `Most of the work in machine learning happens before the model. I also learned that results need careful testing before anyone relies on them, which is why the models went to Cmbio for further tuning.`,
     },
 
     {
@@ -169,10 +161,10 @@ window.CONTENT = {
         { src: `assets/img/alumni-home.webp`, alt: `Upload page with prediction type` },
         { src: `assets/img/alumni-eda.webp`, alt: `Engagement correlation heatmap` },
       ],
-      summary: TODO,
-      built: TODO,
-      challenge: TODO,
-      learned: TODO,
+      summary: `A web tool powered by a machine learning model that predicts which alumni are likely to give and shows what drives engagement. It helps the Alumni & Development office focus outreach on the people most likely to respond.`,
+      built: `Prepared the alumni data, trained a random forest classifier on class year, house, and engagement data, and built a Flask web app. Users upload a spreadsheet to get predictions or an engagement correlation heatmap.`,
+      challenge: `Messy, incomplete records. Many alumni had missing details, such as an unknown house, and far fewer gave than didn’t. I cleaned the data and handled the gaps so the model didn’t just predict “no” for everyone.`,
+      learned: `A model is only useful if people can act on it. I learned to explain results in plain terms so the office could see not just who might give, but why.`,
     },
   ],
 
@@ -202,8 +194,8 @@ window.CONTENT = {
         { label: `MIT URTC poster (PDF)`, url: `assets/docs/brain-tumor-cnn-poster-mit-urtc.pdf` },
         { label: `Full journal issue`, url: `https://www.curieuxacademicjournal.com/_files/ugd/99711c_aca5394bf7ec4768ab37f7c1eccfea9a.pdf` },
       ],
-      summary: TODO,   // What question did you ask, and what did you find?
-      learned: TODO,   // What did you learn, or what would you do next?
+      summary: `Can transfer learning beat a CNN trained from scratch at classifying brain tumor MRIs? Yes: EfficientNetB0 reached 94.1% test accuracy, versus 73.9% from scratch.`,
+      learned: `What I learned: With limited medical data, starting from a pretrained model helps a lot. I also learned to spot overfitting and present research clearly to an expert audience.`,   
     },
     {
       id: `gmu`,
@@ -220,8 +212,8 @@ window.CONTENT = {
       links: [
         { label: `Slides (PDF)`, url: `assets/docs/gmu-llm-liver-transplant-slides.pdf`, primary: true },
       ],
-      summary: TODO,
-      learned: TODO,
+      summary: `Can LLMs predict which liver transplant patients will be hospitalized within a year? Not well: the LLM prompts scored near chance, while our decision tree reached 75% accuracy.`,
+      learned: `What I learned: Newer isn’t always better. On structured patient data, a simple, explainable model beat an LLM. I also learned to present findings clearly, which won us Best Speaker.`,
     },
     {
       id: `glyphosate`,
@@ -229,7 +221,8 @@ window.CONTENT = {
       credit: `Co-author`,
       authors: `Jonathan Yang, Sathvik Samant, Lena Haefele, Louise Carroll, Nikhil Dhruv, Robert Lee, Christopher Yang, Jamie Ho, Sameer Menghani`,
       venue: `Critical Debates in Humanities, Science and Global Justice, Vol. 4, Issue 1, September 2024`,
-      extra: TODO,     // e.g. "My part: ..." (what Chris did on this paper)
+      extra: `Glyphosate paper: My part
+I helped prepare the data and build the random forest models that predict glyphosate contamination from environmental and socioeconomic indicators.`,     
       stats: [
         [`80%`, `accuracy, environmental-indicator model`],
         [`72%`, `accuracy, socioeconomic-indicator model`],
@@ -262,7 +255,9 @@ window.CONTENT = {
   about: {
     photo: `assets/img/chris-jump.webp`,
     photoAlt: `Chris mid-jump on a beach boardwalk`,
-    text: TODO,        // A short paragraph about Chris, in his voice
+    text: `I grew up across New York, Abu Dhabi, and New Jersey, and I’ve never been good at sitting still. I’m curious about almost everything, especially where biology meets code, and I like problems that don’t have an obvious answer yet. Most of my projects started with a simple question: could I build something that makes this easier?
+
+Away from the screen, I’m on the wrestling mat, at the piano with the jazz band, or at home with my two cats, Cookie and Mochi, who are my toughest critics. I can juggle, moonwalk, and backflip (not usually at the same time), and I’m always up for learning something new, especially if someone says it’s hard.`,
     facts: [
       [`School`, `The Lawrenceville School, since 2023`],
       [`Leads`, `Founder, Bioengineering Club. Co-president, AI Council`],
