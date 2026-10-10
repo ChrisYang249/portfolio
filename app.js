@@ -61,7 +61,7 @@
     <div class="hero-main">
       <img class="headshot" src="${esc(p.headshot)}" alt="Portrait of ${esc(p.name)}" width="88" height="88">
       <h1 class="name"><span>${esc(nameParts[0])}</span> <span>${esc(nameParts.slice(1).join(' '))}</span></h1>
-      <p class="hero-meta">${esc(p.school)}<br>${esc(p.base)}</p>
+      <p class="hero-meta">${esc(p.school)}</p>
       ${voice(p.intro, 'intro', 'hero-intro')}
     </div>
     <aside class="switchboard" aria-labelledby="sb-h">
